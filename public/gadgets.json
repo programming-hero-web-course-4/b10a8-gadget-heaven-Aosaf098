@@ -1,0 +1,122 @@
+[
+    {
+      "product_id": "1",
+      "product_title": "Dell XPS 13",
+      "product_image": "https://example.com/images/dell_xps_13.jpg",
+      "category": "Laptops",
+      "price": 999.99,
+      "description": "A high-performance laptop with an InfinityEdge display and sleek design.",
+      "specification": [
+        "13.3-inch FHD display",
+        "Intel Core i7 processor",
+        "16GB RAM",
+        "512GB SSD",
+        "Intel Iris Xe Graphics"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "2",
+      "product_title": "iPhone 14 Pro",
+      "product_image": "https://example.com/images/iphone_14_pro.jpg",
+      "category": "Phones",
+      "price": 1199.99,
+      "description": "The latest iPhone with a powerful A16 Bionic chip and ProMotion display.",
+      "specification": [
+        "6.1-inch OLED display",
+        "A16 Bionic chip",
+        "Triple-lens camera",
+        "128GB storage",
+        "5G connectivity"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "3",
+      "product_title": "Samsung Galaxy Watch 6",
+      "product_image": "https://example.com/images/galaxy_watch_6.jpg",
+      "category": "Smart Watches",
+      "price": 299.99,
+      "description": "A versatile smartwatch with fitness tracking and health monitoring features.",
+      "specification": [
+        "1.4-inch Super AMOLED display",
+        "Advanced fitness tracking",
+        "Heart rate and SpO2 monitoring",
+        "GPS built-in",
+        "Water-resistant"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "4",
+      "product_title": "Apple MacBook Air M2",
+      "product_image": "https://example.com/images/macbook_air_m2.jpg",
+      "category": "MacBook",
+      "price": 1299.99,
+      "description": "Lightweight and powerful, powered by Apple’s M2 chip for top-notch performance.",
+      "specification": [
+        "13.6-inch Retina display",
+        "Apple M2 chip",
+        "8GB RAM",
+        "256GB SSD",
+        "Up to 18 hours battery life"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "5",
+      "product_title": "Sony WH-1000XM5",
+      "product_image": "https://example.com/images/sony_wh_1000xm5.jpg",
+      "category": "Accessories",
+      "price": 349.99,
+      "description": "Industry-leading noise-canceling headphones with exceptional sound quality.",
+      "specification": [
+        "Over-ear design",
+        "Active noise cancellation",
+        "30 hours battery life",
+        "Quick charging",
+        "Bluetooth 5.2"
+      ],
+      "availability": false,
+      "rating": 4.9
+    },
+    {
+      "product_id": "8",
+      "product_title": "Bose QuietComfort Earbuds II",
+      "product_image": "https://example.com/images/bose_qc_earbuds_ii.jpg",
+      "category": "Accessories",
+      "price": 299.99,
+      "description": "Noise-canceling true wireless earbuds with immersive sound quality.",
+      "specification": [
+        "Active noise cancellation",
+        "Up to 6 hours battery life",
+        "IPX4 water resistance",
+        "Touch controls",
+        "Bluetooth 5.3"
+      ],
+      "availability": false,
+      "rating": 4.8
+    },
+    {
+      "product_id": "9",
+      "product_title": "Google Pixel 7 Pro",
+      "product_image": "https://example.com/images/pixel_7_pro.jpg",
+      "category": "Phones",
+      "price": 899.99,
+      "description": "Google’s flagship phone with AI-enhanced camera and Google Tensor G2 chip.",
+      "specification": [
+        "6.7-inch QHD+ display",
+        "Google Tensor G2 chip",
+        "Triple rear camera setup",
+        "128GB storage",
+        "5G connectivity"
+      ],
+      "availability": true,
+      "rating": 4.7
+    }
+  ]
+  

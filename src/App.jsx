@@ -1,12 +1,18 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./Components/Navbar";
+import { Outlet } from "react-router-dom";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
-    <div>
-      <h1 className='text-slate-900 text-7xl font-sora'>StarkTech</h1>
-      <h1 className='text-7xl text-prim'>StarkTech</h1>
-    </div>
-  )
-}
+    <>
+      <div className="bg-base-200 pt-10">
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </div>
+    </>
+  );
+};
 
-export default App
+export default App;
