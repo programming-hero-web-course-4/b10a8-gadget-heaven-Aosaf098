@@ -1,8 +1,7 @@
 import React from 'react'
 
-const Sidebar = ({gadget}) => {
+const Sidebar = ({category}) => {
 
-    const {category} = gadget
   return (
     <>
         <div className='flex flex-col'>

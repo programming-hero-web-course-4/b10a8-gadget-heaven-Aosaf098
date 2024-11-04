@@ -1,8 +1,8 @@
 [
     {
-      "product_id": "1",
+      "product_id": 1,
       "product_title": "Dell XPS 13",
-      "product_image": "https://example.com/images/dell_xps_13.jpg",
+      "product_image": "https://computermania-bd.b-cdn.net/wp-content/uploads/Dell-XPS-13-Plus-BD-Price-1.jpg",
       "category": "Laptops",
       "price": 999.99,
       "description": "A high-performance laptop with an InfinityEdge display and sleek design.",
@@ -17,9 +17,9 @@
       "rating": 4.7
     },
     {
-      "product_id": "2",
+      "product_id": 2,
       "product_title": "iPhone 14 Pro",
-      "product_image": "https://example.com/images/iphone_14_pro.jpg",
+      "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-14-Pro-Space-Black-1138.jpg",
       "category": "Phones",
       "price": 1199.99,
       "description": "The latest iPhone with a powerful A16 Bionic chip and ProMotion display.",
@@ -34,9 +34,9 @@
       "rating": 4.8
     },
     {
-      "product_id": "3",
+      "product_id": 3,
       "product_title": "Samsung Galaxy Watch 6",
-      "product_image": "https://example.com/images/galaxy_watch_6.jpg",
+      "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-Watch6-Gold-5232.jpg",
       "category": "Smart Watches",
       "price": 299.99,
       "description": "A versatile smartwatch with fitness tracking and health monitoring features.",
@@ -51,9 +51,9 @@
       "rating": 4.5
     },
     {
-      "product_id": "4",
+      "product_id": 4,
       "product_title": "Apple MacBook Air M2",
-      "product_image": "https://example.com/images/macbook_air_m2.jpg",
+      "product_image": "https://mcsolution.com.bd/wp-content/uploads/2021/12/MacBook-Air-M2-16-512-GB-MC-Solution-BD-600x600.webp",
       "category": "MacBook",
       "price": 1299.99,
       "description": "Lightweight and powerful, powered by Apple’s M2 chip for top-notch performance.",
@@ -68,9 +68,9 @@
       "rating": 4.6
     },
     {
-      "product_id": "5",
+      "product_id": 5,
       "product_title": "Sony WH-1000XM5",
-      "product_image": "https://example.com/images/sony_wh_1000xm5.jpg",
+      "product_image": "https://m2.me-retail.com/cdn-cgi/image/w=250,q=75,f=auto/pub/media/catalog/product/w/h/wh-1000xm5b-7.png",
       "category": "Accessories",
       "price": 349.99,
       "description": "Industry-leading noise-canceling headphones with exceptional sound quality.",
@@ -85,9 +85,9 @@
       "rating": 4.9
     },
     {
-      "product_id": "8",
+      "product_id": 6,
       "product_title": "Bose QuietComfort Earbuds II",
-      "product_image": "https://example.com/images/bose_qc_earbuds_ii.jpg",
+      "product_image": "https://skr.mu/wp-content/uploads/2023/01/1_0090_BOSE-QC-EARBUDS-II-BLACK-1.jpg",
       "category": "Accessories",
       "price": 299.99,
       "description": "Noise-canceling true wireless earbuds with immersive sound quality.",
@@ -102,9 +102,9 @@
       "rating": 4.8
     },
     {
-      "product_id": "9",
+      "product_id": 7,
       "product_title": "Google Pixel 7 Pro",
-      "product_image": "https://example.com/images/pixel_7_pro.jpg",
+      "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Pixel-7-Pro-Hazel-6784.jpg",
       "category": "Phones",
       "price": 899.99,
       "description": "Google’s flagship phone with AI-enhanced camera and Google Tensor G2 chip.",
@@ -117,6 +117,74 @@
       ],
       "availability": true,
       "rating": 4.7
+    },
+    {
+        "product_id": 8,
+        "product_title": "Samsung Galaxy Z Fold 5",
+        "product_image": "https://images.samsung.com/is/image/samsung/assets/bd/smartphones/galaxy-z-fold5/images/galaxy-z-fold5-highlights-sustainability-mo.jpg?imbypass=true",
+        "category": "Phones",
+        "price": 1799.99,
+        "description": "A versatile foldable smartphone with enhanced multitasking capabilities and 5G support.",
+        "specification": [
+          "7.6-inch foldable AMOLED display",
+          "Snapdragon 8+ Gen 1 processor",
+          "512GB storage",
+          "12GB RAM",
+          "5G connectivity"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 9,
+        "product_title": "Garmin Fenix 7X Solar",
+        "product_image": "https://static.trisports.com/productimages/images286/gbnbg2-1.jpg",
+        "category": "Smartwatches",
+        "price": 999.99,
+        "description": "Premium smartwatch with solar charging, GPS, and health tracking features.",
+        "specification": [
+          "1.4-inch sunlight-visible display",
+          "Solar-powered battery",
+          "GPS navigation",
+          "Heart rate monitor",
+          "Multisport tracking"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 10,
+        "product_title": "OnePlus 11 5G",
+        "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/OnePlus-11-(3)-4957.jpg",
+        "category": "Phones",
+        "price": 799.99,
+        "description": "High-performance smartphone with Snapdragon 8 Gen 2 and ultra-fast charging.",
+        "specification": [
+          "6.7-inch Fluid AMOLED display",
+          "Snapdragon 8 Gen 2 processor",
+          "Triple rear camera setup",
+          "256GB storage",
+          "5G connectivity"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 11,
+        "product_title": "Apple Watch Series 9",
+        "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Watch-Series-9-(3)-6716.jpg",
+        "category": "Smartwatches",
+        "price": 429.99,
+        "description": "Apple’s latest smartwatch with new sensors and advanced health tracking features.",
+        "specification": [
+          "Always-on Retina display",
+          "Blood oxygen and ECG app",
+          "Water resistant up to 50 meters",
+          "64GB storage",
+          "18 hours battery life"
+        ],
+        "availability": true,
+        "rating": 4.7
     }
   ]
   
