@@ -1,8 +1,13 @@
 import { Link, useLocation } from "react-router-dom"
+import { CiShoppingCart, CiHeart } from "react-icons/ci";
+import { useContext } from "react";
+import { CartContext } from "../App";
+
 
 const Navbar = () => {
 
     const location = useLocation()
+    const {cart, setCart} = useContext(CartContext)
 
   return (
     <>
@@ -22,11 +27,12 @@ const Navbar = () => {
             </ul>
         </div>
         <div className="flex items-center gap-6">
-            <div>
-                <img className="w-7" src="https://img.icons8.com/?size=24&id=zhda2EVBCvHY&format=png" alt="Cart" />
+            <div className="flex">
+                <CiShoppingCart size={40} color="black" className="" />
+                {cart}
             </div>
             <div>
-                <img className="w-7" src="https://img.icons8.com/?size=24&id=85038&format=png" alt="Wishlist" />
+                <CiHeart size={40} color="black" />
             </div>
         </div>
      </div>

@@ -1,10 +1,14 @@
 // import { list } from "postcss";
-import React from "react";
+import React, { useContext } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component"
 import { CiShoppingCart, CiHeart } from "react-icons/ci";
+import { CartContext } from "../App";
 
 const GadgetDetails = () => {
+
+  const {handleCart} = useContext(CartContext)
+
   const { gadgetId } = useParams();
 
   const data = useLoaderData();
@@ -23,7 +27,7 @@ const GadgetDetails = () => {
   } = gadget;
   return (
     <>
-      <div className="relative mb-96">
+      <div className="relative mt-2 mb-[450px]">
         <div className="mt-4 pt-16 pb-60 bg-prim w-full flex flex-col items-center justify-center gap-6">
           <h1 className="text-4xl font-bold font-sora text-center text-white">
             Product Details
@@ -42,7 +46,7 @@ const GadgetDetails = () => {
               />
             </div>
             <div className="flex flex-col gap-4 py-4">
-                <h1 className="text-4xl font-bold font-sora">{product_title}</h1>
+                <h1 className="text-4xl font-bold font-sora mt-4">{product_title}</h1>
                 <p className="font-sora text-lg font-medium">Price: {price}$</p>
                 <span className={`w-1/4 text-center rounded-2xl font-sora font-normal text-white ${availability ? 'bg-green-400' : 'bg-red-500'}`}>{availability ? "In Stock" : "Out of Stock"}</span>
                 <p className="py-2 font-sora font-medium">{description}</p>
@@ -60,13 +64,14 @@ const GadgetDetails = () => {
                 </div>
                 <div className="flex items-center gap-4">
                   <div>
-                    <button className="px-6 py-2 bg-prim text-white rounded-3xl font-bold my-4">
-                        {`Add to Cart ${ <CiShoppingCart />}`}
+                    <button onClick={handleCart} className="px-6 py-2 bg-prim text-white rounded-3xl font-bold my-4 flex items-center gap-4 justify-center">
+                        Add to Cart
+                        { <CiShoppingCart size={30} />}
                     </button>
                   </div>
-                  <div className="bg-base-200 rounded-1/2">
+                  <div className="bg-base-500 rounded-[50%]">
                     {
-                        <CiHeart />
+                        <CiHeart size={30} />
                     }
                   </div>
                 </div>
