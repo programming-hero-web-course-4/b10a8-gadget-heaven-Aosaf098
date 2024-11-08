@@ -11,7 +11,9 @@ const Gadgets = () => {
             .then(res => res.json())
             .then(data => setGadgets(data))
     }, [])
-    
+
+    // console.log(gadgets)
+
     let newArr = []
     for (let i = 0; i < gadgets.length; i++) {
         newArr.push(gadgets[i].category)

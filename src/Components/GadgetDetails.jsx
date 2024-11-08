@@ -1,21 +1,25 @@
 // import { list } from "postcss";
-import React, { useContext } from "react";
+import React, { createContext, useContext } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component"
 import { CiShoppingCart, CiHeart } from "react-icons/ci";
 import { CartContext } from "../App";
 
+// export const gadgetContext = createContext()
+
 const GadgetDetails = () => {
 
-  const {handleCart, handleAddCart, handleHeart, disabled, handleDisabled} = useContext(CartContext)
+  const {handleCart, handleAddCart, handleHeart, disabled, handleDisabled, handleAddPrice} = useContext(CartContext)
 
   const { gadgetId } = useParams();
 
   const data = useLoaderData();
+//   console.log(data)
 
   const id = Number(gadgetId);
 
   const gadget = data.find((gadget) => gadget.product_id === id);
+//   console.log(gadget)
   const {
     product_title,
     product_image,
@@ -25,6 +29,8 @@ const GadgetDetails = () => {
     availability,
     rating,
   } = gadget;
+
+
   return (
     <>
       <div className="relative mt-2 mb-[450px]">
@@ -67,8 +73,9 @@ const GadgetDetails = () => {
                     <button onClick={() => {
                         handleCart()
                         handleAddCart(gadget)
+                        handleAddPrice(gadget)
                         }} 
-                        className="px-6 py-2 bg-prim text-white rounded-3xl font-bold my-4 flex items-center gap-4 justify-center">
+                        className="px-6 py-2 bg-prim text-white rounded-3xl font-bold my-4 flex items-center gap-4 justify-center hover:bg-purple-500">
                         Add to Cart
                         { <CiShoppingCart size={30} />}
                     </button>

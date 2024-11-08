@@ -28,11 +28,11 @@ const router = createBrowserRouter([
       {
         path: 'dashboard',
         element: <Dashboard />,
+        loader: () => fetch('/gadgets.json'),
         children: [
           {
             path: 'cart',
             element: <Cart />,
-            loader: () => fetch('/gadgets.json')
           },
           {
             path: 'wishlist',

@@ -1,13 +1,34 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, useLocation, useLoaderData, useParams} from "react-router-dom";
 import Cart from "./Cart";
 import Wishlist from "./Wishlist";
 import { Helmet } from "react-helmet";
+import { CartContext } from "../App";
+
 
 const Dashboard = () => {
 
+  // const {addCart} = useContext(CartContext)
+  const {addCart, addPrice} = useContext(CartContext)
+  // console.log(addCart)
+  // console.log(product_title)
+
   const location = useLocation()
-  console.log(location.pathname)
+  // console.log(location.pathname)
+
+  // const { gadgetId } = useParams();
+  // const id = Number(gadgetId)
+
+  const data = useLoaderData()
+  // console.log(data)
+
+  // const gadget = data.find((gadget) => gadget.product_id === id);
+  // console.log(gadget)
+  // const {
+  //   product_title
+  // } = data;
+
+//  console.log(product_title)
   return (
     <>
       <Helmet>
@@ -35,7 +56,10 @@ const Dashboard = () => {
       </div>
       <div>
         {
-          (location.pathname === '/dashboard/cart' || location.pathname === '/dashboard') && <Cart />
+          // addCart.length === 0 && <h1 className="text-7xl">Nothing is Here</h1>
+        }
+        {
+          (location.pathname === '/dashboard/cart' || location.pathname === '/dashboard') && <Cart addCart={addCart} addPrice={addPrice} />
         }
       </div>
       <div>
