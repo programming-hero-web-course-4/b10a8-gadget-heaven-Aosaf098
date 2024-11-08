@@ -7,7 +7,7 @@ import { CartContext } from "../App";
 const Navbar = () => {
 
     const location = useLocation()
-    const {cart, setCart} = useContext(CartContext)
+    const {cart, heart} = useContext(CartContext)
 
   return (
     <>
@@ -28,11 +28,12 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-6">
             <div className="flex">
-                <CiShoppingCart size={40} color="black" className="" />
+                <CiShoppingCart size={40} color="black" />
                 {cart}
             </div>
-            <div>
+            <div className="flex">
                 <CiHeart size={40} color="black" />
+                {heart}
             </div>
         </div>
      </div>

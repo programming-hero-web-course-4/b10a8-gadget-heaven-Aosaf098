@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import { Helmet } from "react-helmet";
 
 const Offers = () => {
   return (
-    <div>
-      <h1 className="text-7xl">Offers</h1>
-    </div>
-  )
-}
+    <>
+      <Helmet>
+        <title>Offers | StartTech</title>
+      </Helmet>
+      <div>
+        <h1 className="text-7xl">Offers</h1>
+      </div>
+    </>
+  );
+};
 
-export default Offers
+export default Offers;

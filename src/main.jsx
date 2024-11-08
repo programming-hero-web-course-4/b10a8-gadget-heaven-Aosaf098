@@ -8,6 +8,9 @@ import Dashboard from "./Components/Dashboard.jsx";
 import Stats from "./Components/Stats.jsx";
 import Offers from "./Components/Offers.jsx";
 import GadgetDetails from "./Components/GadgetDetails.jsx";
+import Cart from "./Components/Cart.jsx";
+import Wishlist from "./Components/Wishlist.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -25,6 +28,17 @@ const router = createBrowserRouter([
       {
         path: 'dashboard',
         element: <Dashboard />,
+        children: [
+          {
+            path: 'cart',
+            element: <Cart />,
+            loader: () => fetch('/gadgets.json')
+          },
+          {
+            path: 'wishlist',
+            element: <Wishlist />,
+          }
+        ]
       },
       {
         path: 'offers',

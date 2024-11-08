@@ -7,7 +7,7 @@ import { CartContext } from "../App";
 
 const GadgetDetails = () => {
 
-  const {handleCart} = useContext(CartContext)
+  const {handleCart, handleAddCart, handleHeart, disabled, handleDisabled} = useContext(CartContext)
 
   const { gadgetId } = useParams();
 
@@ -64,16 +64,24 @@ const GadgetDetails = () => {
                 </div>
                 <div className="flex items-center gap-4">
                   <div>
-                    <button onClick={handleCart} className="px-6 py-2 bg-prim text-white rounded-3xl font-bold my-4 flex items-center gap-4 justify-center">
+                    <button onClick={() => {
+                        handleCart()
+                        handleAddCart(gadget)
+                        }} 
+                        className="px-6 py-2 bg-prim text-white rounded-3xl font-bold my-4 flex items-center gap-4 justify-center">
                         Add to Cart
                         { <CiShoppingCart size={30} />}
                     </button>
                   </div>
-                  <div className="bg-base-500 rounded-[50%]">
+                  <button onClick={() => {
+                    handleHeart()
+                    handleDisabled()
+                    }}
+                    disabled={disabled} className={`bg-base-500 rounded-[50%] cursor-pointer hover:bg-base-200 ${disabled && 'opacity-50 cursor-not-allowed'}`}>
                     {
                         <CiHeart size={30} />
                     }
-                  </div>
+                  </button>
                 </div>
             </div>
             </div>
