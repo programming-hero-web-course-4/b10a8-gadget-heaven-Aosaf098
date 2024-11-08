@@ -9,7 +9,7 @@ import { CartContext } from "../App";
 const Dashboard = () => {
 
   // const {addCart} = useContext(CartContext)
-  const {addCart, addPrice} = useContext(CartContext)
+  const {addCart, addPrice, addWishlist} = useContext(CartContext)
   // console.log(addCart)
   // console.log(product_title)
 
@@ -64,7 +64,7 @@ const Dashboard = () => {
       </div>
       <div>
         {
-          location.pathname === '/dashboard/wishlist' && <Wishlist />
+          location.pathname === '/dashboard/wishlist' && <Wishlist addWishlist={addWishlist} />
         }
       </div>
     </>

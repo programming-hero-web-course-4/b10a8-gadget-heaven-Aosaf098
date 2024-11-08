@@ -9,8 +9,8 @@ const App = () => {
   const [cart, setCart] = useState(0);
   const [addCart, setAddCart] = useState([])
   const [heart, setHeart] = useState(0)
-  const [disabled, setDisabled] = useState(false)
   const [addPrice, setAddPrice] = useState(0)
+  const [addWishlist, setaddWishlist] = useState([])
 
   const handleCart = () => {
     // console.log(233)
@@ -25,10 +25,6 @@ const App = () => {
     // console.log('Added to wishlist')
     setHeart(heart + 1)
   }
-  const handleDisabled = () => {
-    // console.log('Button disabled')
-    setDisabled(true)
-  }
 
   const handleAddCart = (cart) => {
     console.log(cart)
@@ -37,11 +33,25 @@ const App = () => {
     // console.log(newCart)
     setAddCart(newCart)
   }
+  const handleAddWishlist = (addCart) => {
+    console.log(addCart)
+    
+    const alreadyExists = addWishlist.find((wishItem) => wishItem.id === cart.id)
+
+    if (!alreadyExists) {
+      // const newWishlist = [...addWishlist, cart]
+      setaddWishlist(...addWishlist, cart)
+      console.log("Items Added")
+    } else {
+      console.log('Already Exists')
+    }
+    // console.log(newWishlist)
+  }
 
   return (
     <>
       <div className="bg-base-200 pt-10">
-        <CartContext.Provider value={{ cart, setCart, handleCart, handleAddCart, addCart, setAddCart, heart, handleHeart, disabled, handleDisabled, handleAddPrice, addPrice }}>
+        <CartContext.Provider value={{ cart, setCart, handleCart, handleAddCart, addCart, setAddCart, heart, handleHeart,handleAddPrice, addPrice, addWishlist, handleAddWishlist }}>
           <Navbar />
           <Outlet />
         </CartContext.Provider>

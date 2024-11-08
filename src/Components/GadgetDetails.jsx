@@ -9,7 +9,7 @@ import { CartContext } from "../App";
 
 const GadgetDetails = () => {
 
-  const {handleCart, handleAddCart, handleHeart, disabled, handleDisabled, handleAddPrice} = useContext(CartContext)
+  const {handleCart, handleAddCart, handleHeart, handleAddPrice, handleAddWishlist} = useContext(CartContext)
 
   const { gadgetId } = useParams();
 
@@ -82,9 +82,9 @@ const GadgetDetails = () => {
                   </div>
                   <button onClick={() => {
                     handleHeart()
-                    handleDisabled()
+                    handleAddWishlist(gadget)
                     }}
-                    disabled={disabled} className={`bg-base-500 rounded-[50%] cursor-pointer hover:bg-base-200 ${disabled && 'opacity-50 cursor-not-allowed'}`}>
+                    className={`bg-base-500 rounded-[50%] cursor-pointer hover:bg-base-200 `}>
                     {
                         <CiHeart size={30} />
                     }

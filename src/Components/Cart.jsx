@@ -1,6 +1,3 @@
-import React, { useContext } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
-import { CartContext } from "../App";
 import CartItem from "./CartItem";
 import { FaSortNumericDownAlt } from "react-icons/fa";
 

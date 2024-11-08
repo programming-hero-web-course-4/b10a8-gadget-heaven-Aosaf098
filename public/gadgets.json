@@ -3,7 +3,7 @@
       "product_id": 1,
       "product_title": "Dell XPS 13",
       "product_image": "https://computermania-bd.b-cdn.net/wp-content/uploads/Dell-XPS-13-Plus-BD-Price-1.jpg",
-      "category": "Laptops",
+      "category": "Laptop",
       "price": 999.99,
       "description": "A high-performance laptop with an InfinityEdge display and sleek design.",
       "specification": [
@@ -54,7 +54,7 @@
       "product_id": 4,
       "product_title": "Apple MacBook Air M2",
       "product_image": "https://mcsolution.com.bd/wp-content/uploads/2021/12/MacBook-Air-M2-16-512-GB-MC-Solution-BD-600x600.webp",
-      "category": "MacBook",
+      "category": "Laptop",
       "price": 1299.99,
       "description": "Lightweight and powerful, powered by Apple’s M2 chip for top-notch performance.",
       "specification": [
@@ -139,7 +139,7 @@
         "product_id": 9,
         "product_title": "Garmin Fenix 7X Solar",
         "product_image": "https://static.trisports.com/productimages/images286/gbnbg2-1.jpg",
-        "category": "Smartwatches",
+        "category": "Smart Watches",
         "price": 999.99,
         "description": "Premium smartwatch with solar charging, GPS, and health tracking features.",
         "specification": [
@@ -173,7 +173,7 @@
         "product_id": 11,
         "product_title": "Apple Watch Series 9",
         "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Watch-Series-9-(3)-6716.jpg",
-        "category": "Smartwatches",
+        "category": "Smart Watches",
         "price": 429.99,
         "description": "Apple’s latest smartwatch with new sensors and advanced health tracking features.",
         "specification": [
@@ -185,6 +185,143 @@
         ],
         "availability": true,
         "rating": 4.7
+    },
+    {
+        "product_id": 12,
+        "product_title": "HP Spectre x360 14",
+        "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/HP-Spectre-x360-Convertible-14-EF2013DX-b-2154.jpg",
+        "category": "Laptop",
+        "price": 1299.99,
+        "description": "A premium 2-in-1 convertible laptop with stunning display and powerful performance.",
+        "specification": [
+            "13.5-inch 3K OLED touchscreen",
+            "Intel Core i7 processor",
+            "16GB RAM",
+            "1TB SSD",
+            "Intel Iris Xe Graphics"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 13,
+        "product_title": "Lenovo ThinkPad X1 Carbon Gen 11",
+        "product_image": "https://p1-ofp.static.pub//fes/cms/2024/07/05/5mxoj7f098sof1ixxc9mekzc0fkhb6446464.png",
+        "category": "Laptop",
+        "price": 1499.99,
+        "description": "An ultra-light business laptop with top-tier performance and security features.",
+        "specification": [
+            "14-inch WUXGA display",
+            "Intel Core i7 vPro processor",
+            "16GB LPDDR5 RAM",
+            "512GB SSD",
+            "Integrated Intel Iris Xe Graphics"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 14,
+        "product_title": "ASUS ROG Zephyrus G14",
+        "product_image": "https://dlcdnwebimgs.asus.com/gain/7767BD74-8865-4D61-96F7-94D6412E3E46",
+        "category": "Laptop",
+        "price": 1399.99,
+        "description": "A compact and powerful gaming laptop with advanced cooling technology.",
+        "specification": [
+            "14-inch QHD+ display",
+            "AMD Ryzen 9 processor",
+            "32GB RAM",
+            "1TB SSD",
+            "NVIDIA GeForce RTX 4060"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 15,
+        "product_title": "Fitbit Sense 2",
+        "product_image": "https://diamu.com.bd/wp-content/uploads/2022/11/Fitbit-Sense-2-Advanced-Health-and-Fitness-Smartwatch-5.jpg",
+        "category": "Smart Watches",
+        "price": 299.95,
+        "description": "A smartwatch designed for stress management, heart health, and overall wellness tracking.",
+        "specification": [
+            "1.58-inch AMOLED display",
+            "EDA sensor for stress tracking",
+            "Heart rate and SpO2 monitoring",
+            "Up to 6 days battery life",
+            "Built-in GPS"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 16,
+        "product_title": "Amazfit GTR 4",
+        "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Amazfit-GTR-4-Black-4223.jpg",
+        "category": "Smart Watches",
+        "price": 199.99,
+        "description": "A sleek smartwatch with advanced health and fitness tracking features.",
+        "specification": [
+            "1.43-inch AMOLED display",
+            "24-hour heart rate monitoring",
+            "Blood oxygen saturation measurement",
+            "Dual-band GPS",
+            "Up to 14 days battery life"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 17,
+        "product_title": "Huawei Watch GT 4",
+        "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/HUAWEI-Watch-GT-4-46mm-Brown-6688.jpg",
+        "category": "Smart Watches",
+        "price": 249.99,
+        "description": "A feature-rich smartwatch with stylish design and comprehensive fitness tracking.",
+        "specification": [
+            "1.43-inch AMOLED display",
+            "TruSleep 3.0 sleep monitoring",
+            "Heart rate and SpO2 tracking",
+            "Built-in GPS",
+            "Up to 14 days battery life"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 18,
+        "product_title": "Logitech MX Master 3S",
+        "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv6NiwJMbv7kagVJl7MhPjQFc8Asacc83FZw&s",
+        "category": "Accessories",
+        "price": 99.99,
+        "description": "An advanced wireless mouse with ultra-quiet clicks and high precision for productivity.",
+        "specification": [
+            "8000 DPI sensor",
+            "Ultra-fast MagSpeed scroll wheel",
+            "Ergonomic design",
+            "USB-C rechargeable",
+            "Bluetooth and Unifying receiver"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 19,
+        "product_title": "Anker PowerCore 10000 Portable Charger",
+        "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Anker-PowerCore-10000-PD-Redux-Portable-Power-Bank-22.5W-3717.jpg",
+        "category": "Accessories",
+        "price": 29.99,
+        "description": "A compact and lightweight portable charger with high-speed charging capabilities.",
+        "specification": [
+            "10000mAh capacity",
+            "High-speed PowerIQ technology",
+            "Compact design",
+            "Micro USB recharging",
+            "MultiProtect safety system"
+        ],
+        "availability": true,
+        "rating": 4.7
     }
-  ]
+]
+    
   
