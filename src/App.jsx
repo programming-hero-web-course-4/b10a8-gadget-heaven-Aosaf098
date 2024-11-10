@@ -2,6 +2,8 @@ import React, { createContext, useState } from "react";
 import Navbar from "./Components/Navbar";
 import { Outlet } from "react-router-dom";
 import Footer from "./Components/Footer";
+import { Slide, ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const CartContext = createContext(0);
 
@@ -13,25 +15,24 @@ const App = () => {
   const [addWishlist, setAddWishlist] = useState([]);
 
   const handleCart = (gadget) => {
-
     const { availability } = gadget;
 
     if (availability === true) {
       setCart(cart + 1);
     }
-  }
+  };
 
   const handleAddCart = (cart) => {
-
     const { availability } = cart;
 
     if (availability === true) {
       const newCart = [...addCart, cart];
       setAddCart(newCart);
+      toast("Item added to the Cart Successfully");
     } else {
-      alert("Out of Stock");
+      toast("Out of Stock");
     }
-  }
+  };
 
   const handleHeart = () => {
     setHeart(heart + 1);
@@ -50,6 +51,7 @@ const App = () => {
 
     if (!alreadyExists) {
       setAddWishlist([...addWishlist, addCart]);
+      toast("Item added to the Wishlist Successfully");
     }
 
     console.log("Updated addWishlist:", [...addWishlist, addCart]);
@@ -77,6 +79,19 @@ const App = () => {
         >
           <Navbar />
           <Outlet />
+          <ToastContainer
+            position="top-center"
+            autoClose={2000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+            transition:slide
+          />
         </CartContext.Provider>
         <Footer />
       </div>
