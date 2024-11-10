@@ -72,7 +72,7 @@ const GadgetDetails = () => {
                 <div className="flex items-center gap-4">
                   <div>
                     <button onClick={() => {
-                        handleCart()
+                        handleCart(gadget)
                         handleAddCart(gadget)
                         handleAddPrice(gadget)
                         }} 

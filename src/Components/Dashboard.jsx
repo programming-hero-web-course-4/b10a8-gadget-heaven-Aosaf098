@@ -9,7 +9,12 @@ import { CartContext } from "../App";
 const Dashboard = () => {
 
   // const {addCart} = useContext(CartContext)
-  const {addCart, addPrice, addWishlist} = useContext(CartContext)
+  const {addCart, setAddCart, addPrice, addWishlist} = useContext(CartContext)
+
+  const handleSorting = () => {
+    const sortedList = [...addCart].sort((a, b) => b.price - a.price)
+    setAddCart(sortedList)
+  }
   // console.log(addCart)
   // console.log(product_title)
 
@@ -59,7 +64,7 @@ const Dashboard = () => {
           // addCart.length === 0 && <h1 className="text-7xl">Nothing is Here</h1>
         }
         {
-          (location.pathname === '/dashboard/cart' || location.pathname === '/dashboard') && <Cart addCart={addCart} addPrice={addPrice} />
+          (location.pathname === '/dashboard/cart' || location.pathname === '/dashboard') && <Cart addCart={addCart} addPrice={addPrice} handleSorting={handleSorting} />
         }
       </div>
       <div>
