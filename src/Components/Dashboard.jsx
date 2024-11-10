@@ -20,7 +20,7 @@ const Dashboard = () => {
   // const id = Number(gadgetId)
 
   const data = useLoaderData()
-  // console.log(data)
+  console.log(data)
 
   // const gadget = data.find((gadget) => gadget.product_id === id);
   // console.log(gadget)

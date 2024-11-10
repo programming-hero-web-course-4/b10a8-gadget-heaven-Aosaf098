@@ -9,7 +9,7 @@ import { CartContext } from "../App";
 
 const GadgetDetails = () => {
 
-  const {handleCart, handleAddCart, handleHeart, handleAddPrice, handleAddWishlist} = useContext(CartContext)
+  const {handleCart, handleAddCart, handleHeart, handleAddPrice, handleAddWishlist, addWishlist} = useContext(CartContext)
 
   const { gadgetId } = useParams();
 
@@ -30,6 +30,7 @@ const GadgetDetails = () => {
     rating,
   } = gadget;
 
+  const isDisabled = addWishlist.some(item => item.product_id === gadget.product_id)
 
   return (
     <>
@@ -84,7 +85,8 @@ const GadgetDetails = () => {
                     handleHeart()
                     handleAddWishlist(gadget)
                     }}
-                    className={`bg-base-500 rounded-[50%] cursor-pointer hover:bg-base-200 `}>
+                    disabled={isDisabled}
+                    className={`bg-base-500 rounded-[50%] cursor-pointer hover:bg-base-200 ${isDisabled && 'opacity-60 cursor-not-allowed'} `}>
                     {
                         <CiHeart size={30} />
                     }

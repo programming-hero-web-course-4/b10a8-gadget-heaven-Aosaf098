@@ -2,6 +2,7 @@ import React from "react";
 import WishListItem from "./WishListItem";
 
 const Wishlist = ({ addWishlist }) => {
+    console.log(addWishlist)
   return (
     <div className="mt-10">
       <div className="w-[70%] mx-auto">

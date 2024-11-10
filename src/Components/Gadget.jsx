@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Gadget = ({item}) => {
+
     const {product_id,product_title, price, product_image} = item
-    // console.log(price)
+    
   return (
     <>
       <div className="card bg-base-100 w-96 shadow-xl">

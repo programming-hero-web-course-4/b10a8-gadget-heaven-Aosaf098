@@ -15,14 +15,12 @@ const Gadgets = () => {
     }, [])
     
     const categories2 = ['All Products', ...new Set(gadgets.map(cat => cat.category))];
-    console.log(categories2)
     
     const handleCategory = (type) => {
         setSelectedCategory(type)
     }
 
     const filteredTypes = gadgets.filter(gadget => gadget.category === selectedCategory || selectedCategory === 'All Products')
-    console.log(filteredTypes)
 
   return (
     <>
