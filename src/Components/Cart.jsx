@@ -2,18 +2,26 @@ import { useState } from "react";
 import CartItem from "./CartItem";
 import { FaSortNumericDownAlt } from "react-icons/fa";
 import Modal from "./Modal";
+import { BsDisplay } from "react-icons/bs";
 
-const Cart = ({ addCart, addPrice, handleSorting }) => {
+const Cart = ({ addCart, addPrice, setAddPrice, handleSorting }) => {
+
+    const {price} = addCart
 
   const [isModalOpen, setisModalOpen] = useState(true)
+  const [modalPrice, setModalPrice] = useState(0)
 
   const handlePurchase = () => {
     console.log(123)
-    setisModalOpen(true);
-  };
-//   const closeModal = () => {
-//     setisModalOpen(false);
-//   };
+    setAddPrice(0)
+  }
+
+  const newCart = [...addCart]
+
+  const handleModalPrice = (price) => {
+    setModalPrice(modalPrice + price)
+  }
+
   return (
     <>
       <div className="flex w-[70%] mx-auto p-4 justify-around gap-20 items-center">
@@ -36,18 +44,19 @@ const Cart = ({ addCart, addPrice, handleSorting }) => {
             Purchase
           </button> */}
           {
-            (isModalOpen) && <Modal handlePurchase={handlePurchase} />
+            (isModalOpen) && <Modal handlePurchase={handlePurchase} addCart={addCart} addPrice={addPrice} handleModalPrice={handleModalPrice} modalPrice={modalPrice} />
             
           }
         </div>
       </div>
       <div>
-        {addCart.map((cartItem, idx) => (
-          <CartItem key={idx} cartItem={cartItem} />
-        ))}
+          {
+            newCart.map((cartItem, idx) => ( <CartItem key={idx} cartItem={cartItem} />))  
+          }
       </div>
     </>
   );
 };
 
 export default Cart;
+

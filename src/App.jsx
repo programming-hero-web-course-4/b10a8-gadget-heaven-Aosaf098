@@ -70,6 +70,7 @@ const App = () => {
             handleHeart,
             handleAddPrice,
             addPrice,
+            setAddPrice,
             addWishlist,
             handleAddWishlist,
           }}

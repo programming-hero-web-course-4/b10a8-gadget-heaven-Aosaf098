@@ -10,12 +10,14 @@ import Offers from "./Components/Offers.jsx";
 import GadgetDetails from "./Components/GadgetDetails.jsx";
 import Cart from "./Components/Cart.jsx";
 import Wishlist from "./Components/Wishlist.jsx";
+import Error from "./Components/Error.jsx";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error />,
     children: [
       {
         path: '/',
