@@ -321,6 +321,10 @@
         ],
         "availability": true,
         "rating": 4.7
+    },
+    {
+        "product_id": 19,
+        "category": "Drones"
     }
 ]
     
