@@ -2,14 +2,17 @@ import { useState } from "react";
 import CartItem from "./CartItem";
 import { FaSortNumericDownAlt } from "react-icons/fa";
 import Modal from "./Modal";
-import { BsDisplay } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
-const Cart = ({ addCart, addPrice, setAddPrice, handleSorting }) => {
+
+
+const Cart = ({ setCart, addCart, setAddCart, addPrice, setAddPrice, handleSorting }) => {
 
     const {price} = addCart
 
   const [isModalOpen, setisModalOpen] = useState(true)
   const [modalPrice, setModalPrice] = useState(0)
+
 
   const handlePurchase = () => {
     console.log(123)
@@ -20,6 +23,17 @@ const Cart = ({ addCart, addPrice, setAddPrice, handleSorting }) => {
 
   const handleModalPrice = (price) => {
     setModalPrice(modalPrice + price)
+  }
+
+  const emptyCart = () => {
+    setCart(0)
+    setAddCart([])
+  }
+
+  const navigate = useNavigate()
+
+  const handleNavigate = () => {
+      navigate("/")
   }
 
   return (
@@ -44,7 +58,7 @@ const Cart = ({ addCart, addPrice, setAddPrice, handleSorting }) => {
             Purchase
           </button> */}
           {
-            (isModalOpen) && <Modal handlePurchase={handlePurchase} addCart={addCart} addPrice={addPrice} handleModalPrice={handleModalPrice} modalPrice={modalPrice} />
+            (isModalOpen) && <Modal handlePurchase={handlePurchase} addCart={addCart} addPrice={addPrice} handleModalPrice={handleModalPrice} modalPrice={modalPrice} emptyCart={emptyCart} handleNavigate={handleNavigate} />
             
           }
         </div>

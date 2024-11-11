@@ -1,10 +1,9 @@
 import React from "react";
 import modalPic from "../../public/assets/Group.png";
 
-const Modal = ({ handlePurchase, addCart, addPrice, handleModalPrice, modalPrice }) => {
+const Modal = ({ handlePurchase, addCart, addPrice, handleModalPrice, modalPrice, emptyCart, handleNavigate }) => {
 
     console.log(addPrice)
-
 
   return (
     <>
@@ -16,6 +15,7 @@ const Modal = ({ handlePurchase, addCart, addPrice, handleModalPrice, modalPrice
             document.getElementById("my_modal_5").showModal()
             handlePurchase()
             handleModalPrice(addPrice)
+            emptyCart()
         }}
       >
         Purchase
@@ -30,7 +30,7 @@ const Modal = ({ handlePurchase, addCart, addPrice, handleModalPrice, modalPrice
           <div className="modal-action">
             <form method="dialog">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn font-sora font-semibold text-white bg-prim px-4 py-2 rounded-3xl hover:bg-purple-500">Close</button>
+              <button onClick={handleNavigate} className="btn font-sora font-semibold text-white bg-prim px-4 py-2 rounded-3xl hover:bg-purple-500">Close</button>
             </form>
           </div>
         </div>

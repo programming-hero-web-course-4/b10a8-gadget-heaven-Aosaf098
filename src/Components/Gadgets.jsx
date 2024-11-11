@@ -21,6 +21,7 @@ const Gadgets = () => {
     }
 
     const filteredTypes = gadgets.filter(gadget => gadget.category === selectedCategory || selectedCategory === 'All Products')
+    console.log(filteredTypes)
 
   return (
     <>

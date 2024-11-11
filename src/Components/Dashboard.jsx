@@ -8,32 +8,18 @@ import { CartContext } from "../App";
 
 const Dashboard = () => {
 
-  // const {addCart} = useContext(CartContext)
-  const {addCart, setAddCart, addPrice, setAddPrice, addWishlist} = useContext(CartContext)
+  const {setCart, addCart, setAddCart, addPrice, setAddPrice, addWishlist} = useContext(CartContext)
 
   const handleSorting = () => {
     const sortedList = [...addCart].sort((a, b) => b.price - a.price)
     setAddCart(sortedList)
   }
-  // console.log(addCart)
-  // console.log(product_title)
 
   const location = useLocation()
-  // console.log(location.pathname)
-
-  // const { gadgetId } = useParams();
-  // const id = Number(gadgetId)
 
   const data = useLoaderData()
   console.log(data)
 
-  // const gadget = data.find((gadget) => gadget.product_id === id);
-  // console.log(gadget)
-  // const {
-  //   product_title
-  // } = data;
-
-//  console.log(product_title)
   return (
     <>
       <Helmet>
@@ -64,7 +50,7 @@ const Dashboard = () => {
           // addCart.length === 0 && <h1 className="text-7xl">Nothing is Here</h1>
         }
         {
-          (location.pathname === '/dashboard/cart' || location.pathname === '/dashboard') && <Cart addCart={addCart} addPrice={addPrice} setAddPrice={setAddPrice} handleSorting={handleSorting}  />
+          (location.pathname === '/dashboard/cart' || location.pathname === '/dashboard') && <Cart setCart={setCart} addCart={addCart} setAddCart={setAddCart} addPrice={addPrice} setAddPrice={setAddPrice} handleSorting={handleSorting}  />
         }
       </div>
       <div>
