@@ -4,6 +4,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component"
 import { CiShoppingCart, CiHeart } from "react-icons/ci";
 import { CartContext } from "../App";
+import { Helmet } from "react-helmet";
 
 // export const gadgetContext = createContext()
 
@@ -34,6 +35,9 @@ const GadgetDetails = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Product Details | StarkTech</title>
+    </Helmet>
       <div className="relative mt-2 mb-[450px]">
         <div className="mt-4 pt-16 pb-60 bg-prim w-full flex flex-col items-center justify-center gap-6">
           <h1 className="text-4xl font-bold font-sora text-center text-white">
