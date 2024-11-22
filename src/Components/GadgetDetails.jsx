@@ -38,8 +38,8 @@ const GadgetDetails = () => {
     <Helmet>
         <title>Product Details | StarkTech</title>
     </Helmet>
-      <div className="relative mt-2 mb-[450px]">
-        <div className="mt-4 pt-16 pb-60 bg-prim w-full flex flex-col items-center justify-center gap-6">
+      <div className="lg:relative mt-2 lg:mb-[450px]">
+        <div className="mt-4 pt-16 pb-16 lg:pb-60 bg-prim w-full flex flex-col items-center justify-center gap-6">
           <h1 className="text-4xl font-bold font-sora text-center text-white">
             Product Details
           </h1>
@@ -49,14 +49,14 @@ const GadgetDetails = () => {
             we have it all
           </p>
         </div>
-        <div className="w-[65%] mx-auto absolute top-[120%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-evenly bg-white rounded-3xl">
+        <div className="lg:w-[65%] mt-12 lg:mt-0 mx-auto lg:absolute lg:top-[120%] lg:left-1/2 transform lg:-translate-x-1/2 lg:-translate-y-1/2 flex items-center lg:flex-row flex-col justify-evenly bg-white rounded-3xl">
             <div className="hero-content">
               <img
                 src={product_image}
-                className="rounded-2xl w-96 h-[500px] object-contain"
+                className="rounded-2xl w-96 lg:h-[500px] object-contain"
               />
             </div>
-            <div className="flex flex-col gap-4 py-4">
+            <div className="flex flex-col gap-4 py-4 px-8">
                 <h1 className="text-4xl font-bold font-sora mt-4">{product_title}</h1>
                 <p className="font-sora text-lg font-medium">Price: {price}$</p>
                 <span className={`w-1/4 text-center rounded-2xl font-sora font-normal text-white ${availability ? 'bg-green-400' : 'bg-red-500'}`}>{availability ? "In Stock" : "Out of Stock"}</span>
@@ -73,7 +73,7 @@ const GadgetDetails = () => {
                   <h5 className="text-lg font-bold font-sora mb-1">Rating</h5>
                   <ReactStars count={rating} size={24} isHalf={true}/>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 justify-center lg:justify-start">
                   <div>
                     <button onClick={() => {
                         handleCart(gadget)

@@ -9,7 +9,7 @@ const Footer = () => {
                 <p className='text-sm font-medium text-center font-sora'>Leading the way in cutting-edge technology and innovation.</p>
             </div>
             <hr className='w-1/2 mx-auto border border-solid border-black' />
-            <div className='flex justify-evenly items-center gap-10'>
+            <div className='flex lg:flex-row flex-col justify-evenly lg:items-center gap-10 lg:px-0 px-6'>
                 <div className='flex flex-col gap-4'>
                     <h3 className='font-semibold font-sora text-lg'>Services</h3>
                     <ul className='font-medium font-sora text-sm space-y-2 pt-2'>

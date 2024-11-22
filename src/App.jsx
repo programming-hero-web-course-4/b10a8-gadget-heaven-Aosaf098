@@ -59,7 +59,7 @@ const App = () => {
 
   return (
     <>
-      <div className="bg-base-200 pt-10">
+      <div className="bg-base-200 pt-10 w-full">
         <CartContext.Provider
           value={{
             cart,

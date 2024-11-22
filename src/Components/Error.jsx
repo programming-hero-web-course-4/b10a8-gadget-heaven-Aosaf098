@@ -12,7 +12,7 @@ const Error = () => {
             <img src="https://img.icons8.com/?size=80&id=ytpYJAJuc8ju&format=png" alt="" />
             <h1 className='font-sora font-bold text-center text-6xl'>Oops</h1>
             <p className='font-sora font-medium'>Sorry, an unexpected eror has occured</p>
-            <p className='flex gap-2 items-center font-sora font-bold text-2xl'>
+            <p className='flex gap-2 items-center font-sora font-bold text-2xl *:text-center'>
                 <i>{error.status}</i>
                 <i className='font-sora font-bold text-2xl'>{error.statusText || error.message}</i>
             </p>

@@ -9,7 +9,7 @@ const Gadget = ({ item }) => {
       {category === "Drones" ? (
         <div className="hidden"></div>
       ) : (
-        <div className="card bg-base-100 w-96 shadow-xl">
+        <div className="card bg-base-100 lg:w-96 w-80 shadow-xl">
           <figure className="pt-10">
             <img
               src={product_image}
